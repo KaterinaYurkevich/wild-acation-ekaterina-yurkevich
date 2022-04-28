@@ -317,7 +317,7 @@
                         border-radius: 4px;
                         position: relative;
                         margin-top: 24px;
-                        transition: .5s;
+                        transition: 1s;
                     }
                     
                     .box-direction img {
@@ -360,6 +360,7 @@
                         display: flex;
                         flex-direction: column;
                         height: 216px;
+                        transition: 1s;
                     }
                     
                     .box-direction-discription p {
