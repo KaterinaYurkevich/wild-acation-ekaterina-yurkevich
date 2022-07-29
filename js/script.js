@@ -143,3 +143,25 @@ popupWindowButton.addEventListener("click", function(event) {
 
 
 // menu button
+
+const menuBody = document.querySelector('.menu-header');
+const menuButton = document.querySelector('.mobile-menu-button');
+
+menuButton.addEventListener("click", menu);
+
+function menu(event) {
+    menuBody.classList.toggle('_menu-header-active');
+
+}
+
+// button language
+
+const languageButtonBody = document.querySelector('.language-switch-wrapper');
+const languageButton = document.querySelector('.language-button-switch');
+
+languageButton.addEventListener("click", switchLanguage);
+
+function switchLanguage(event) {
+    languageButtonBody.classList.toggle('_language-switch-active');
+
+}

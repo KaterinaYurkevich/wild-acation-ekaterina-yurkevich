@@ -81,6 +81,16 @@
                         padding-left: 18px;
                     }
                     
+                    .language-switch-wrapper {
+                        display: none;
+                    }
+                    
+                    .language-switch-wrapper li {
+                        list-style: none;
+                        font-size: 14px;
+                        line-height: 26px;
+                    }
+                    
                     .language-button {
                         font-size: 13px;
                         line-height: 16px;
@@ -785,14 +795,19 @@
                         ._menu-header-active {
                             display: block;
                             position: fixed;
+                            transform: translateY(50px);
+                            background-color: #23272c;
                         }
                         ._menu-header-active ul {
                             min-width: 100px;
                         }
                         ._menu-header-active li {
+                            display: block;
+                            text-align: right;
                             margin-left: 0;
                             font-size: 14px;
-                            line-height: 20px;
+                            line-height: 26px;
+                            padding: 0 5px 0 20px;
                         }
                         .menu-help-wrapper {
                             justify-content: flex-end;
@@ -929,6 +944,20 @@
                             line-height: 20px;
                             cursor: pointer;
                         }
+                        ._language-switch-active {
+                            display: block;
+                            position: fixed;
+                            transform: translateY(15px);
+                            background-color: #23272c;
+                        }
+                        ._language-switch-active li {
+                            display: block;
+                            text-align: left;
+                            font-size: 14px;
+                            line-height: 26px;
+                            color: #fff;
+                            padding: 0 20px 0 5px;
+                        }
                         .box-our-blog-card-second {
                             justify-content: center;
                         }
@@ -970,6 +999,12 @@
                         }
                         .language-button-switch {
                             margin-top: 15px;
+                        }
+                        ._language-switch-active {
+                            transform: translate(-20px, 40px);
+                        }
+                        ._language-switch-active li {
+                            padding: 0 20px 0 5px;
                         }
                         .logo {
                             margin-bottom: 20px;
