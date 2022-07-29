@@ -150,10 +150,18 @@ const menuButton = document.querySelector('.mobile-menu-button');
 menuButton.addEventListener("click", menu);
 
 function menu(event) {
-    if (event.target.closest('.mobile-menu-button')) {
-        menuBody.classList.toggle('_menu-header-active');
-    }
-    if (!event.target.closest('.menu-header')) {
-        menuBody.classList.remove('_menu-header-active');
-    }
+    menuBody.classList.toggle('_menu-header-active');
+
+}
+
+// button language
+
+const languageButtonBody = document.querySelector('.language-switch-wrapper');
+const languageButton = document.querySelector('.language-button-switch');
+
+languageButton.addEventListener("click", switchLanguage);
+
+function switchLanguage(event) {
+    languageButtonBody.classList.toggle('_language-switch-active');
+
 }
